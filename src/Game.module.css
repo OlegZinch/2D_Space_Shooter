@@ -1,0 +1,114 @@
+/* Game.module.css */
+
+.root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #888;
+}
+
+.gameArea {
+  width: 70vw;
+  height: 100vh;
+  position: relative;
+  background: #0a0a2a;
+  overflow: hidden;
+  float: left;
+}
+
+.statsPanel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 70vw;
+  background: #ccc;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 32px;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-family: monospace;
+  border-left: 2px solid #bbb;
+  gap: 32px;
+}
+
+.livesIcons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  z-index: 11;
+}
+
+.score {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 10;
+  text-shadow: 0 1px 6px #000a;
+}
+
+.lives {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 10;
+  text-shadow: 0 1px 6px #000a;
+}
+
+.gameOver {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #c00;
+  font-size: 48px;
+  font-weight: bold;
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.statsTitle {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.statsRow {
+  margin: 0;
+}
+
+.controlsTitle {
+  margin-top: 32px;
+  font-weight: bold;
+}
+
+.controlsList {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.statsFooter {
+  margin-top: 32px;
+  color: #888;
+  font-size: 16px;
+}
